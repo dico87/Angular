@@ -1,0 +1,20 @@
+<div class="row text-center">
+  <div class="col">
+    <h3>Contador Hijo</h3>
+    <h4>{{_count}}</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <button class="btn btn-primary" (click)="multiply()">Multiplicar</button>
+    <button class="btn btn-info" (click)="divide()">Dividir</button>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col">
+    <app-subchild [_count]="_count" (_countChangeEvent)="update($event)"></app-subchild>
+  </div>
+</div>

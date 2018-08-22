@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ChildComponent } from './counter/child/child.component';
+import { SubchildComponent } from './counter/subchild/subchild.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChildComponent,
+    SubchildComponent
   ],
   imports: [
     BrowserModule
